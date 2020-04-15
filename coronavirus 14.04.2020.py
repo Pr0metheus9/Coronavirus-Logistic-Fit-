@@ -1,4 +1,4 @@
-#model of coronavirus
+#Pr0metheus
 import xlrd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -14,7 +14,7 @@ def read_xls(filename,n):
     #del column[-1] #To remove text underneath data (Was used in a particular case)
     return column
 
-filename = 'C:\\Users\\Miki\Documents\\coronadata.xlsx'
+filename = 'excel file path'
 
 date = read_xls(filename,0)
 total_cases = read_xls(filename,1)
